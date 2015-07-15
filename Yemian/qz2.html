@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--网站首页-->
+<title>求职信息(详细)</title>
+
+<link href="../Css/basis.css" rel="stylesheet" type="text/css" />
+<link href="../Css/zpqz.css" rel="stylesheet" type="text/css" />
+<link href="../Css/liebiao.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<center>
+<!--头部-->
+<div id="top">
+  <table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width=704 height="29">&nbsp;</td>
+      <td width="80">用户注册|</td>
+      <td width="80">设为首页|</td>
+      <td width="80" >收藏本站|</td>
+      <td width="80">学校主页</td>
+    </tr>
+  </table>
+</div>
+<!--logo-->
+<div id="logo"><img src="../Picture/logo1.png" alt="" name="LOGO" width="1024" height="140" id="LOGO" /></div>
+<!--导航-->
+<div id="menu_navcc">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="20%" height="49"><div align="center">首页</div></td>
+      <td width="20%" height="49"><div align="center">最新公告</div></td>
+      <td width="20%" height="49"><div align="center">助学招聘</div></td>
+      <td width="20%" height="49"><div align="center">助学求职</div></td>
+      <td width="20%" height="49"><div align="center">帮助</div></td>
+    </tr>
+  </table>
+</div>
+<div class="zhutie">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="18%" class="px130">标题：</td>
+      <td width="10%" class="px130"><div align="right">姓名：</div></td>
+      <td width="72%" rowspan="6"><form id="form1" name="form1" method="post" action="">
+        <label for="textfield"></label>
+        <textarea name="textfield" cols="100" rows="6" id="textfield"></textarea>
+      </form></td>
+    </tr>
+    <tr>
+      <td >学历：</td>
+      <td ><div align="right">个人简介：</div></td>
+      </tr>
+    <tr>
+      <td >年龄：</td>
+      <td ><div align="right"></div></td>
+      </tr>
+    <tr>
+      <td >工作地点：</td>
+      <td ><div align="right"></div></td>
+      </tr>
+    <tr>
+      <td >工作时间：</td>
+      <td ><div align="right"></div></td>
+      </tr>
+    <tr>
+      <td >联系电话：</td>
+      <td ><div align="right"></div></td>
+      </tr>
+  </table>
+</div>
+<div class="huifutie">
+<div class="LBsize">
+				<div class="liebiao">
+				  <table>
+				  <tr>
+				    <td>
+                    <table>
+				      <tr class="top">
+                      	<td class="px80"> 回复人 </td>
+                        <td class="px700"> 内容 </td>
+				        <td class="px130"> 时间</td>
+			          </tr>
+				      
+                      
+                      
+                      
+			        </table>
+                    </td>
+				  </tr>
+				  </table>
+				  <!-- 分页-页码 -->
+					<table class="page" align="center">
+						<tr>
+							<td onmouseover="pageOver(this)" onmouseout="pageOut(this)"
+								onclick="location.href='requestInfo_newest.action?page=0'">
+								首页
+							</td>
+							<td onmouseover="pageOver(this)" onmouseout="pageOut(this)"
+								onclick="location.href='requestInfo_newest.action?page=<%=page2 - 1 < 0 ? 0 : page2 - 1%>'">
+								上一页
+							</td>
+							<%
+							for (int i = page2 - 1 < 0 ? 0 : page2 - 1; i < maxPage; i++) {
+								if (i < 9 + page2) {
+						%>
+							<td onmouseover="pageOver(this)" onmouseout="pageOut(this)"
+								width="20px;"
+								onclick="location.href='requestInfo_newest.action?page=<%=i%>'">
+								<%=i + 1%>
+							</td>
+							<%
+							} else if (i == maxPage) {
+						%>
+							<td width="20px;">
+								...
+							</td>
+							<%
+							}
+							}
+						%>
+							<td onmouseover="pageOver(this)" onmouseout="pageOut(this)"
+								onclick="location.href='requestInfo_newest.action?page=<%=page2 + 1 >= maxPage ? maxPage - 1 : page2 + 1%>'">
+								下一页
+							</td>
+							<td onmouseover="pageOver(this)" onmouseout="pageOut(this)"
+								onclick="location.href='requestInfo_newest.action?page=<%=maxPage - 1 > 0 ? maxPage - 1 : 0%>'">
+								末页
+							</td>
+						</tr>
+				  </table>
+</div>
+</div>
+</div>
+<div class="edit">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="2">发表回复</td>
+    </tr>
+    <tr>
+      <td colspan="2">内容:</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><textarea name="textfield3" cols="100" rows="8" id="textfield3"></textarea></td>
+    </tr>
+    <tr>
+      <td width="13%">&nbsp;</td>
+      <td width="87%"><img src="../Picture/fabiao.png" width="120" height="29" alt="发表" /></td>
+    </tr>
+  </table>
+</div>
+<div id="bottom">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="129" colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="37%">&nbsp;</td>
+      <td width="28%">关于我们|联系我们|友情链接|后台登陆</td>
+      <td width="35%">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</center>
+</body>
+</html>

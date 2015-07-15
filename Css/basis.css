@@ -1,0 +1,54 @@
+/* CSS Document */
+#top {
+	position: relative;
+	top: 0px;
+	width: 1024px;
+	height: 30px;
+	z-index: 1;
+	color: #999;
+}
+#logo {
+	position: relative;
+	width: 1024px;
+	height: 150px;
+	z-index: 1;
+	visibility: visible;
+}
+
+#menu_navcc {
+	position: relative;
+	width: 1024px;
+	height: 50px;
+	z-index: 1;
+	background-image: url(../Picture/menu.png);
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #FFF;
+}
+#zhuti{
+	position: relative;
+	width: 1024px;
+	hight: auto;
+	z-index: 1;
+	height: auto;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#bottom {
+	position: relative;
+	width: 1024px;
+	height: 150px;
+	z-index: 1;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background-color: #0C6;
+	color: #FFF;
+	top: 5px;
+	border: thin outset #000;
+}

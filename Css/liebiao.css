@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+
+
+/* 表格样式 */
+.LBsize {
+	width: 1020px;
+}
+
+.liebiao {
+	width: 100%;
+	height: auto;
+	font-size: 12px;
+	font-family: 宋体;
+	text-align: center;
+}
+
+.liebiao .top {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: #33CC99;
+	height: 22px;
+	line-height: 22px;
+}
+
+.liebiao table {
+	margin-top: 5px;
+}
+
+.liebiao tr {
+	height: 27px;
+}
+
+.liebiao .context {
+	background-color: #FFF;
+	height: 27px;
+}
+
+.liebiao .context1 {
+	background-color: #CCC;
+	height: 27px;
+}
+
+.liebiao .px80 {
+	width: 80px;
+}
+
+.liebiao .px130 {
+	width: 130px;
+}
+
+.liebiao .px150 {
+	width: 150px;
+}
+
+.liebiao .px200 {
+	width: 200px;
+}
+
+.liebiao .px250 {
+	width: 250px;
+}
+
+.liebiao .px300 {
+	width: 300px;
+}
+
+.liebiao .px350 {
+	width: 350px;
+}
+
+.liebiao .px400 {
+	width: 400px;
+}
+
+.liebiao .px450 {
+	width: 450px;
+}
+
+.liebiao .px500 {
+	width: 500px;
+}
+
+.liebiao .px550 {
+	width: 550px;
+}
+
+.liebiao .px600 {
+	width: 600px;
+}
+
+.liebiao .px650 {
+	width: 650px;
+}
+
+.liebiao .px700 {
+	width: 700px;
+}
+
+/* 分页 */
+.page {
+	font-family: verdana, arial, tahoma;
+	font-weight: bold;
+	font-size: 20px;
+	color: #4aa3ff;
+	line-height: 30px;
+	height: 30px;
+	font-size: 12px;
+}
+
+.page table {
+	background-color: #DDD;
+	text-align: center;
+}
+
+.page tr {
+	width: auto;
+}
+
+.page td {
+	border: 1px;
+	border-style: ridge;
+	border-color: #4aa3ff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
